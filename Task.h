@@ -5,10 +5,17 @@
 
 class Task {
 public:
-    std::pair<bool, std::string> GetTask();
+    Task(int id, std::string text);
+
+    void DoTask();
+
+    int GetId() const;
+    std::string GetText() const;
+    bool GetStatus() const;
 private:
     bool isReady;
     std::string text;
+    int id;
 };
 
 #endif

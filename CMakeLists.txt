@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(CaTTasksList Main.cpp
-    List.h List.cpp
+    TaskList.h TaskList.cpp
     Task.h Task.cpp)
 
 include(GNUInstallDirs)
