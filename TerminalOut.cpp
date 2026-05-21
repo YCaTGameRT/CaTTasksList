@@ -1,15 +1,14 @@
 #include <stdio.h>
-#include <iostream>
 
 #include "TerminalOut.h"
 
-void TerminalOut::PrintTasks(const std::vector<Task>& tasks) {
+void TerminalOut::PrintTasks(std::vector<Task> tasks) {
     if (tasks.empty()) {
-        printf("Задач нет\n");
+        printf("задач нет\n");
     }
     else {
-        for (const auto& task :tasks) {
-            printf("№%d\t%s\t%s\n", task.GetId(), task.GetText().c_str(), task.GetStatus() ? "выполнено" : "не выполнено");
+        for (auto& task :tasks) {
+            printf("#%d\t%s\t%s\n", task.GetId(), task.GetText().c_str(), task.GetStatus() ? "выполнено" : "не выполнено");
         }
     }
 }

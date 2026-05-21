@@ -13,6 +13,6 @@ void TaskList::DoTask(int id) {
     }
 }
 
-const std::vector<Task>& TaskList::GetTasks() const {
+std::vector<Task> TaskList::GetTasks() const {
     return tasks;
 }

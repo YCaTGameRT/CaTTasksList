@@ -7,7 +7,7 @@
 
 class TerminalOut {
 public:
-    void PrintTasks(const std::vector<Task>& tasks);
+    void PrintTasks(std::vector<Task> tasks);
     void PrintMenu();
 private:
 

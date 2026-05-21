@@ -1,8 +1,12 @@
 #include <locale.h>
-#include <stdio.h>
+
+#include "Executable.h"
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    printf("Привет мир!\n");
+
+    Executable exe;
+    exe.Run();
+
     return 0;
 }

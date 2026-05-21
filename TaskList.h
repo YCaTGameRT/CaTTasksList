@@ -10,7 +10,7 @@ public:
     void AddTask(std::string text);
     void DoTask(int id);
 
-    const std::vector<Task>& GetTasks() const;
+    std::vector<Task> GetTasks() const;
 private:
     std::vector<Task> tasks;
 };
