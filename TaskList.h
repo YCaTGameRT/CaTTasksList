@@ -7,7 +7,7 @@
 
 class TaskList {
 public:
-    void AddTask(const std::string& text);
+    void AddTask(std::string text);
     void DoTask(int id);
 
     const std::vector<Task>& GetTasks() const;

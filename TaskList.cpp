@@ -1,6 +1,6 @@
 #include "TaskList.h"
 
-void TaskList::AddTask(const std::string& text) {
+void TaskList::AddTask(std::string text) {
     int id = tasks.size() +1;
     tasks.push_back(Task(id, text));
 }
